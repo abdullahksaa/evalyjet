@@ -1,0 +1,499 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f7;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.lines-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1em;
+}
+
+/* Banner */
+
+.banner {
+  width: 100%;
+  background: url(http://s6.favim.com/orig/150112/background-cold-gif-nature-Favim.com-2380226.gif);
+  background-size: contain;
+  font-size: 20px;
+  max-height: 100% !important;
+  color: #fff;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.big-text {
+  font-size: 17px;
+  font-weight: 800;
+  animation-delay: 1s;
+}
+
+.banner a {
+  display: inline-block;
+  background: #fff;
+  color: #36465d;
+  text-transform: uppercase;
+  padding: 5px 7px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: .3s;
+}
+
+.banner a:hover {
+  background: #333;
+  color: #fff;
+  border: 1px solid white;
+}
+
+@media screen and (min-width:480px) and (max-width:1024px) {
+  .thumbs-wrapper {
+    display: flex;
+    justify-content: center;
+    transform: none !important;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .banner {
+    font-size: 18px !important;
+    padding: 10px 15px !important;
+  }
+
+  .banner div {
+    font-size: 13px;
+  }
+
+  .banner a {
+    padding: 4px 7px !important;
+    font-size: 10px !important;
+  }
+
+  .big-text {
+    font-size: 15px !important;
+  }
+}
+
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border: 2px solid #333 !important;
+}
+
+li.thumb {
+  border: 1px solid #ccc !important;
+}
+
+.slick-dots {
+  transform: translateY(-40px);
+}
+
+.slick-dots li button::before {
+  color: white !important;
+  opacity: 0.5 !important;
+}
+
+.slick-dots .slick-active button::before {
+  color: white !important;
+  opacity: 100 !important;
+  font-size: 9px;
+}
+
+/* Home Page */
+
+.travel-tour-section {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 8px;
+  justify-content: space-between;
+}
+
+/* @media screen and (max-width:365px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(2, 160px) !important;
+  }
+} */
+
+@media screen and (max-width:375px) {
+  .shop-by-brands-section {
+    margin-left: -3px;
+    margin-right: -2px;
+  }
+  .travel-tour-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.3vw !important;
+    margin-left: -3px;
+    margin-right: -2px;
+  }
+    .destination-card div img {
+      object-fit: cover;
+      height: 96px !important;
+      width: 115px !important;
+      margin-top: 12px !important;
+    }
+
+    .title {
+      margin-top: 22px !important;
+      padding-left: 2px !important;
+      line-height: 20px !important;
+      font-size: 12px !important;
+    }
+
+    .prices {
+      margin-top: 4px !important;
+      margin-left: 3px !important;
+    }
+}
+
+@media (min-width:376px) and (max-width:394px) {
+  .shop-by-brands-section {
+      margin-left: -2px;
+      margin-right: -2px;
+    }
+  .travel-tour-section {
+    grid-template-columns: repeat(2, 180px);
+    gap: 2.3vw !important;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+    .destination-card div img {
+      object-fit: cover;
+      margin-top: 12px !important;
+      height: 96px !important;
+      width: 120px !important;
+    }
+
+    .title {
+      font-size: 12px !important;
+      margin-top: 22px !important;
+        padding-left: 7px !important;
+        line-height: 20px !important;
+    }
+
+        .prices {
+          margin-top: 5px !important;
+          margin-left: 8px !important;
+        }
+}
+
+
+@media (min-width:394px) and (max-width:414px) {
+  .shop-by-brands-section {
+      margin-left: -2px;
+      margin-right: -2px;
+    }
+  .travel-tour-section {
+    grid-template-columns: repeat(2, 189.41px);
+    gap: 2.3vw !important;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+  .destination-card {
+    height: 258px !important;
+  }
+
+     .destination-card div img {
+       object-fit: cover;
+       margin-top: 12px !important;
+       height: 96px !important;
+       width: 125px !important;
+     }
+  
+     .title {
+       font-size: 12px !important;
+       margin-top: 22px !important;
+       padding-left: 7px !important;
+       line-height: 20px !important;
+     }
+  
+     .prices {
+       margin-top: 5px !important;
+       margin-left: 8px !important;
+     }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(3, 165px);
+    row-gap: 12px !important;
+  }
+
+     .destination-card div img {
+       width: 87% !important;
+     }
+
+    .title {
+      font-size: 14px !important;
+      margin-top: 22px !important;
+      padding-left: 2px !important;
+      line-height: 20px !important;
+    }
+  
+    .prices {
+      margin-top: 3px !important;
+      margin-left: 5px !important;
+    }
+}
+
+@media (min-width:543px) and (max-width:768px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(3, 185px);
+    row-gap: 12px !important;
+  }
+
+  .destination-card {}
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(4, 163px);
+    row-gap: 12px !important;
+  }
+  .destination-card {}
+}
+
+@media (min-width:799px) and (max-width:808px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(4, 171px);
+    row-gap: 12px !important;
+  }
+
+  .destination-card {}
+}
+
+@media (min-width:809px) and (max-width:819px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(4, 173px);
+    row-gap: 12px !important;
+  }
+
+  .destination-card {}
+}
+
+@media (min-width:820px) and (max-width:950px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(4, 175px);
+    row-gap: 12px !important;
+  }
+     .destination-card div img {
+       object-fit: cover;
+       height: 110px !important;
+       width: 100% !important;
+     }
+}
+
+@media (min-width:830px) and (max-width:880px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(4, 181px);
+    row-gap: 12px !important;
+  }
+
+  .destination-card {}
+}
+
+@media (min-width:880px) and (max-width:920px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(4, 190px);
+    row-gap: 12px !important;
+  }
+}
+
+@media (min-width:912px) and (max-width:1000px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(4, 220px);
+    row-gap: 14px !important;
+  }
+
+  .destination-card div img {
+    object-fit: cover;
+    height: 130px !important;
+    width: 100% !important;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1024px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(4, 230px);
+    row-gap: 14px !important;
+  }
+
+  .destination-card div img {
+    object-fit: cover;
+    height: 130px !important;
+    width: 100% !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1280px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(4, 223px);
+    row-gap: 14px !important;
+  }
+    .destination-card div img {
+      object-fit: cover;
+      height: 150px !important;
+      width: 100% !important;
+    }
+    .title {
+      margin-top: 18px !important;
+    }
+}
+
+@media (min-width:1280px) and (max-width:1440px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(5, 224px);
+    row-gap: 14px !important;
+  }
+  .destination-card div img {
+    object-fit: cover;
+    height: 150px !important;
+    width: 100% !important;
+  }
+}
+
+@media (min-width:1440px) {
+  .travel-tour-section {
+    grid-template-columns: repeat(6, 185px);
+    row-gap: 1rem;
+  }
+  .destination-card div img {
+      width: 100% !important;
+      height: 120px !important;
+  }
+}
+
+/* Payment Page */
+
+.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label.css-ahj2mt-MuiTypography-root {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.MuiBottomNavigation-root.css-16lloyr-MuiBottomNavigation-root {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected {
+  color: black;
+}
+
+@media screen and (max-width:370px) {
+  .MuiButtonBase-root.MuiBottomNavigationAction-root.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root {
+      min-width: 70px;
+    }
+}
+
+rect {
+  width: 10px !important;
+}
+
+.css-zddlty-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #040720 !important;
+}
+
+.css-6wz749 {
+  background-color: #040720 !important;
+}
+
+.modal {
+  position: fixed;
+  top: 312px !important;
+  left: 52%;
+  border: 1px solid rgba(190, 190, 190, 0.509);
+  height: 512px;
+  transform: translate(-50%, -50%);
+  width: 74%;
+  background-color: white;
+  /* backdrop-filter: blur(20px); */
+  /* padding: 2rem; */
+  border-radius: 0.25rem;
+  /* box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+@media screen and (min-width:480px) {
+  .modal {
+    width: 48% !important;
+    top: 323px !important;
+    left: 43%;
+    height: 523px !important;
+   }
+}
+
+@media screen and (min-width:1024px) {
+  .modal {
+    top: 324px !important;
+    width: 35% !important;
+    left: 50% !important;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(7px); */
+  z-index: 5;
+}
+
+.search-tab {
+  color: red;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  background-color: red !important;
+}
+
+.css-ttwr4n {
+  background-color: red !important;
+}
+
+@media screen and (max-width:400px) {
+
+  .destination-card div img {
+    min-width: 135px !important;
+  }
+
+  .title {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .prices {
+    margin-left: -3px !important;
+    font-size: 12px !important;
+  }
+}
