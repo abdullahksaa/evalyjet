@@ -42,8 +42,8 @@ const TOUR_DESTINATIONS = [
         id: 3,
         imgSrc: "/images/changi.jpeg",
         title: "Economic Sajek Valley Group Tour Package - 35 persons with 1 Night stay",
-        oldPrice: "262,500",
-        newPrice: "140,000",
+        oldPrice: "559",
+        newPrice: "400",
     },
     {
         id: 4,
