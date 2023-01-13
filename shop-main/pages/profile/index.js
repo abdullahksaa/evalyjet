@@ -81,7 +81,7 @@ export default function ProfilePage() {
                                         </div>
                                     </div>
                                     <p className="font-light text-lg mt-[1px]">
-                                        018
+                                        01834419585
                                     </p>
                                     <div className="mt-1">
                                         <button className="flex items-center gap-2 bg-green-600 text-white px-3 py-1 rounded-2xl hover:bg-green-700">
